@@ -8,9 +8,9 @@ namespace calculator_session2
         {
             try
             {
-                int result = 0;
+                float result = 0;
                 Console.WriteLine("Please enter first number:");
-                int number1 = Convert.ToInt32(Console.ReadLine());
+                float number1 = Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine("Please enter an operator (+,-,*,/)");
                 string op = Console.ReadLine();
                 if(op != "+" && op != "-" && op != "*" && op != "/")
@@ -21,7 +21,7 @@ namespace calculator_session2
                     return;
                 }
                 Console.WriteLine("Please enter second number:");
-                int number2 = Convert.ToInt32(Console.ReadLine());
+                float number2 = Convert.ToSingle(Console.ReadLine());
                 
                 switch (op)
                 {
